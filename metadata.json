@@ -1,0 +1,6 @@
+{
+  "name": "Assistant Voice",
+  "description": "Bilingual Sinhala, Singlish, and English AI voice assistant with native Android device controls and Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Assistant Voice</string>
+    <string name="brand_header">ASSISTANT VOICE</string>
+    <string name="greeting_english">Hello! How can I help you?</string>
+    <string name="greeting_sinhala">ආයුබෝවන්! මම ඔබට කෙසේ උදව් කළ හැකිද?</string>
+    <string name="input_hint_en">Type a command or ask anything…</string>
+    <string name="input_hint_si">සිංහලෙන්, Singlish හෝ English වලින් අසන්න…</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_thinking">Thinking…</string>
+    <string name="status_speaking">Speaking…</string>
+    <string name="status_error">Attention needed</string>
+    <string name="cd_settings_button">Open settings</string>
+    <string name="cd_mic_button">Activate voice assistant</string>
+    <string name="cd_stop_mic_button">Stop listening</string>
+    <string name="cd_stop_speaking_button">Stop speaking</string>
+    <string name="cd_send_button">Send message</string>
+    <string name="cd_back_button">Navigate back</string>
+    <string name="cd_speak_message">Speak response aloud</string>
+    <string name="settings_title">Settings</string>
+    <string name="developer_name">MADUSANKA</string>
+    <string name="app_package">com.madusanka.assistantvoice</string>
+    <string name="jarvis_tile_label">Jarvis Voice</string>
+    <string name="jarvis_widget_prompt">Tap to speak to Jarvis…</string>
+    <string name="jarvis_widget_description">Quick-launch Jarvis voice commands and flashlight from your home screen.</string>
+    <string name="jarvis_action_flashlight">Toggle flashlight</string>
+    <string name="jarvis_overlay_title">JARVIS MODE</string>
+    <string name="jarvis_notification_title">Jarvis Standby Active</string>
+    <string name="jarvis_notification_body">Tap Speak anytime to control your phone over any app</string>
+</resources>
