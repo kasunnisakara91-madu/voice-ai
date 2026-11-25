@@ -1,10 +1,12 @@
 package com.example.jarvis
 
+import android.annotation.SuppressLint
 import android.app.PendingIntent
 import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
+import com.example.R
 
 /**
  * Quick Settings Tile allowing the user to summon the floating Jarvis Overlay
@@ -16,8 +18,8 @@ class JarvisTileService : TileService() {
         super.onStartListening()
         qsTile?.let { tile ->
             tile.state = Tile.STATE_ACTIVE
-            tile.label = getString(com.example.R.string.jarvis_tile_label)
-            tile.contentDescription = getString(com.example.R.string.cd_mic_button)
+            tile.label = getString(R.string.jarvis_tile_label)
+            tile.contentDescription = getString(R.string.cd_mic_button)
             tile.updateTile()
         }
     }
@@ -38,8 +40,13 @@ class JarvisTileService : TileService() {
             )
             startActivityAndCollapse(pendingIntent)
         } else {
-            @Suppress("DEPRECATION")
-            startActivityAndCollapse(intent)
+            launchLegacyTileActivity(intent)
         }
+    }
+
+    @Suppress("DEPRECATION")
+    @SuppressLint("StartActivityAndCollapseDeprecated")
+    private fun launchLegacyTileActivity(intent: Intent) {
+        startActivityAndCollapse(intent)
     }
 }
